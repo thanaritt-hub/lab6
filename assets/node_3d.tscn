@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cbhiha4tcgni0"]
+
+[ext_resource type="PackedScene" uid="uid://dq6arxy0nmetv" path="res://assets/praying.tscn" id="1_7hr0d"]
+[ext_resource type="Script" uid="uid://dfidkho1os8wp" path="res://assets/node_3d.gd" id="1_j62gk"]
+[ext_resource type="PackedScene" uid="uid://biohbxlmqhyoj" path="res://assets/Cloud_2.fbx" id="3_w8n5r"]
+[ext_resource type="PackedScene" uid="uid://di25l5mqqsisc" path="res://assets/Cube_Bricks.fbx" id="4_bvftq"]
+[ext_resource type="PackedScene" uid="uid://dfut187pl1k1a" path="res://assets/Tower.fbx" id="5_asdxl"]
+[ext_resource type="PackedScene" uid="uid://chlxliu2n8d0i" path="res://assets/Plant_Small.fbx" id="6_0r06j"]
+
+[node name="Node3D" type="Node3D" unique_id=1104932252]
+script = ExtResource("1_j62gk")
+
+[node name="Praying_1" parent="." unique_id=485172294 instance=ExtResource("1_7hr0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88859487, 0, -0.28407526)
+
+[node name="Praying_2" parent="." unique_id=1099935935 instance=ExtResource("1_7hr0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5274224, 0, -0.28407526)
+
+[node name="Praying_3" parent="." unique_id=51869712 instance=ExtResource("1_7hr0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.164523, 0, -0.28407526)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1054908052]
+transform = Transform3D(1, 0, 0, 0, 0.9968133, -0.07977063, 0, 0.07977063, 0.9968133, -1.0994074, 3.9559813, 15.1692)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=344721565]
+transform = Transform3D(1, 0, 0, 0, 0.9968133, -0.07977063, 0, 0.07977063, 0.9968133, 0.1507107, 3.3784552, 6.9240847)
+
+[node name="Cloud_2" parent="." unique_id=1597513451 instance=ExtResource("3_w8n5r")]
+transform = Transform3D(2.7664137, 0, 0, 0, 1, 0, 0, 0, 1, -7.4943743, 12.124202, 1.0034018)
+
+[node name="Cloud_3" parent="." unique_id=762271928 instance=ExtResource("3_w8n5r")]
+transform = Transform3D(2.7664137, 0, 0, 0, 1, 0, 0, 0, 1, 5.5152245, 12.121903, 1.0786324)
+
+[node name="Cube_Bricks" parent="." unique_id=2078286944 instance=ExtResource("4_bvftq")]
+transform = Transform3D(5.8912554, 0, 0, 0, 1, 0, 0, 0, 7.373364, -1.103375, -1.2654202, -0.055654526)
+
+[node name="Tower" parent="." unique_id=253335618 instance=ExtResource("5_asdxl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1689671, 0, -6.743698)
+
+[node name="Plant_Small" parent="." unique_id=1015941662 instance=ExtResource("6_0r06j")]
+transform = Transform3D(3.291546, 0, 0, 0, 4.248236, 0, 0, 0, 1, 2.8295817, 0, 6.5681696)
+
+[node name="Plant_Small2" parent="." unique_id=105136290 instance=ExtResource("6_0r06j")]
+transform = Transform3D(3.291546, 0, 0, 0, 4.248236, 0, 0, 0, 1, -5.388808, 0, 6.5681696)
